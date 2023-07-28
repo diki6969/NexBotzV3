@@ -108,7 +108,7 @@ handler.all = async function (m) {
 }
 		// Fake 🤥
 		global.ftroli = { key: {participant : '0@s.whatsapp.net'}, message: { orderMessage: { itemCount: fsizedoc, status: 1, surface: 1, message: botdate, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }
-		global.fkontak = { key: {participant : '0@s.whatsapp.net'}, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('https://telegra.ph/file/1a49e56ab009e179f844b.jpg'), thumbnail: fs.readFileSync('https://telegra.ph/file/1a49e56ab009e179f844b.jpg'),sendEphemeral: true}}}
+		global.fkontak = { key: {participant : '0@s.whatsapp.net'}, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg'), thumbnail: fs.readFileSync('./thumbnail.jpg'),sendEphemeral: true}}}
 		global.fkon = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./src/logo.jpg'), thumbnail: fs.readFileSync('./src/logo.jpg'),sendEphemeral: true}}}
         global.fvn = {
             key: {
@@ -124,7 +124,7 @@ handler.all = async function (m) {
                             global.fvid = {
             key: {
                  participant : '0@s.whatsapp.net'},
-            message: { "videoMessage": { "title":wm, "h": `Hmm`,'seconds': fsizedoc, 'caption': bottime, 'jpegThumbnail': fs.readFileSync('https://telegra.ph/file/1a49e56ab009e179f844b.jpg')}}
+            message: { "videoMessage": { "title":wm, "h": `Hmm`,'seconds': fsizedoc, 'caption': bottime, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
                             }
                             
                
@@ -135,7 +135,7 @@ handler.all = async function (m) {
                "extendedTextMessage": {
                         "text":wm,
                         "title": bottime,
-                        'jpegThumbnail': fs.readFileSync('https://telegra.ph/file/1a49e56ab009e179f844b.jpg')
+                        'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
                                }
                              } 
                             }
@@ -143,13 +143,13 @@ handler.all = async function (m) {
                   global.fliveLoc = {
             key: {
             participant : '0@s.whatsapp.net'},
-            message: { "liveLocationMessage": { "caption": wm,"h": `${bottime}`, 'jpegThumbnail': fs.readFileSync('https://telegra.ph/file/1a49e56ab009e179f844b.jpg')}}
+            message: { "liveLocationMessage": { "caption": wm,"h": `${bottime}`, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
            }
                
                   global.fliveLoc2 = {
             key: {
             participant : '0@s.whatsapp.net'},
-            message: { "liveLocationMessage": { "title": wm,"h": bottime, 'jpegThumbnail': fs.readFileSync('https://telegra.ph/file/1a49e56ab009e179f844b.jpg')}}
+            message: { "liveLocationMessage": { "title": wm,"h": bottime, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
            }
                
                    global.ftoko = {
@@ -160,7 +160,7 @@ handler.all = async function (m) {
                        "product": {
                            "productImage":{
                                "mimetype": "image/jpeg",
-                               "jpegThumbnail": fs.readFileSync('https://telegra.ph/file/1a49e56ab009e179f844b.jpg') //Gambarnye
+                               "jpegThumbnail": fs.readFileSync('./thumbnail.jpg') //Gambarnye
                            },
                            "title": wm, //Kasih namalu 
                            "description": bottime, 
@@ -180,7 +180,7 @@ handler.all = async function (m) {
               message: {
                            documentMessage: {
                            title: wm, 
-                           jpegThumbnail: fs.readFileSync('https://telegra.ph/file/1a49e56ab009e179f844b.jpg')
+                           jpegThumbnail: fs.readFileSync('./thumbnail.jpg')
                                  }
                                }
                              }
@@ -194,7 +194,7 @@ handler.all = async function (m) {
                    inviteCode: null,
                    groupName: wm, 
                    caption: bottime, 
-                   jpegThumbnail: fs.readFileSync('https://telegra.ph/file/1a49e56ab009e179f844b.jpg')
+                   jpegThumbnail: fs.readFileSync('./thumbnail.jpg')
                }
            }
        }
@@ -209,7 +209,7 @@ handler.all = async function (m) {
                         'seconds': fsizedoc, 
                         'gifPlayback': 'true', 
                         'caption': bottime,
-                        'jpegThumbnail': fs.readFileSync('https://telegra.ph/file/1a49e56ab009e179f844b.jpg')
+                        'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
                                }
                               }
                              }
