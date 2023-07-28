@@ -64,7 +64,7 @@ handler.all = async function (m) {
 					description: 'simple bot esm',
 					previewType: "PHOTO",
 					thumbnail: await (await fetch(pp)).buffer(),
-					sourceUrl: "https://youtube.com/@ArifzynDev",					
+					sourceUrl: "https://chat.whatsapp.com/Lao3HWH4lYiBzWBR38HbTX",					
 				}
 			}
 		}
