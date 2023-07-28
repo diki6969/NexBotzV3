@@ -143,13 +143,13 @@ handler.all = async function (m) {
                   global.fliveLoc = {
             key: {
             participant : '0@s.whatsapp.net'},
-            message: { "liveLocationMessage": { "caption": wm,"h": `${bottime}`, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
+            message: { "liveLocationMessage": { "caption": wm,"h": `${bottime}`, 'jpegThumbnail': "https://telegra.ph/file/1a49e56ab009e179f844b.jpg"}}
            }
                
                   global.fliveLoc2 = {
             key: {
             participant : '0@s.whatsapp.net'},
-            message: { "liveLocationMessage": { "title": wm,"h": bottime, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
+            message: { "liveLocationMessage": { "title": wm,"h": bottime, 'jpegThumbnail': "https://telegra.ph/file/1a49e56ab009e179f844b.jpg"}}
            }
                
                    global.ftoko = {
@@ -160,7 +160,7 @@ handler.all = async function (m) {
                        "product": {
                            "productImage":{
                                "mimetype": "image/jpeg",
-                               "jpegThumbnail": fs.readFileSync('./thumbnail.jpg') //Gambarnye
+                               "jpegThumbnail": "https://telegra.ph/file/1a49e56ab009e179f844b.jpg" //Gambarnye
                            },
                            "title": wm, //Kasih namalu 
                            "description": bottime, 
@@ -180,7 +180,7 @@ handler.all = async function (m) {
               message: {
                            documentMessage: {
                            title: wm, 
-                           jpegThumbnail: fs.readFileSync('./thumbnail.jpg')
+                           jpegThumbnail: "https://telegra.ph/file/1a49e56ab009e179f844b.jpg"
                                  }
                                }
                              }
@@ -194,7 +194,7 @@ handler.all = async function (m) {
                    inviteCode: null,
                    groupName: wm, 
                    caption: bottime, 
-                   jpegThumbnail: fs.readFileSync('./thumbnail.jpg')
+                   jpegThumbnail: "https://telegra.ph/file/1a49e56ab009e179f844b.jpg"
                }
            }
        }
@@ -209,7 +209,7 @@ handler.all = async function (m) {
                         'seconds': fsizedoc, 
                         'gifPlayback': 'true', 
                         'caption': bottime,
-                        'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
+                        'jpegThumbnail': "https://telegra.ph/file/1a49e56ab009e179f844b.jpg"
                                }
                               }
                              }
