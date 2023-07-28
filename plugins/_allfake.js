@@ -58,8 +58,8 @@ handler.all = async function (m) {
 				//isForwarded: true, // ini biar ada tulisannya diteruskan berkali-kali, jika ingin di hilangkan ganti true menjadi false
 				externalAdReply: { // Bagian ini sesuka kalian berkreasi :'v
                     showAdAttribution: true,
-					title: '𝑼𝑷𝑻𝑰𝑴𝑬 : ' + uptime,
-					body: '𝑩𝒐𝒕 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 𝑩𝒚 𝑨𝒓𝒊𝒇𝒛𝒚𝒏',
+					title: 'Uptime : ' + uptime,
+					body: 'Bot By IkyyOFC',
 					mediaUrl: sgc,
 					description: 'simple bot esm',
 					previewType: "PHOTO",
