@@ -8,7 +8,7 @@ handler.all = async function (m) {
     let totalreg = Object.keys(global.db.data.users).length
 	let pp
 	try {
-		pp = await this.profilePictureUrl(m.sender, 'image')
+		pp = await conn.profilePictureUrl(m.sender, 'image')
 	} catch (e) {
 	pp = hwaifu.getRandom()
 	} finally {
@@ -42,8 +42,8 @@ handler.all = async function (m) {
         
 		// Ini untuk command crator/owner
 		global.kontak2 = [
-         [owner[0], await this.getName(owner[0] + '@s.whatsapp.net'), 'ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ', 'aldashakila23@mail.com', true],
-         [owner[1], await this.getName(owner[1] + '@s.whatsapp.net'), 'ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ', 'aldashakila23@mail.com', true], // Kalo mau di tambah tinggal copy 1baris ini di tempel di bawahnya trs di edit dikit!
+         [owner[0], await conn.getName(owner[0] + '@s.whatsapp.net'), 'ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ', 'aldashakila23@mail.com', true],
+         [owner[1], await conn.getName(owner[1] + '@s.whatsapp.net'), 'ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ', 'aldashakila23@mail.com', true], // Kalo mau di tambah tinggal copy 1baris ini di tempel di bawahnya trs di edit dikit!
         ]
         
 		// ucapan ini mah
